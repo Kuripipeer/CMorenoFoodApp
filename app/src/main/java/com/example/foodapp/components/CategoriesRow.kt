@@ -27,7 +27,7 @@ fun CategoriesRow() {
     Text(
         text = "Nuestras Categorías",
         fontSize = 28.sp,
-        fontWeight = FontWeight.Bold,
+        fontWeight = FontWeight.Medium,
         color = Color.DarkGray,
         modifier = Modifier
             .padding(top = 20.dp, bottom = 10.dp)

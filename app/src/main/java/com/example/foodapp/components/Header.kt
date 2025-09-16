@@ -34,7 +34,7 @@ fun Header(){
         Text(
             text = "Hola, Daniel",
             fontSize = 26.sp,
-            fontWeight = FontWeight.Bold,
+            fontWeight = FontWeight.Medium,
             color = Color.DarkGray,
             modifier = Modifier
                 .padding(10.dp)
