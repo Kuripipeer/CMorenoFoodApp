@@ -2,6 +2,7 @@ package com.example.foodapp.screens
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
@@ -9,6 +10,9 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.lazy.LazyRow
+import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ExitToApp
 import androidx.compose.material.icons.filled.AccountCircle
@@ -18,11 +22,18 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import coil3.compose.AsyncImage
+import coil3.compose.SubcomposeAsyncImage
+import com.example.foodapp.classes.categories
+import com.example.foodapp.components.CategoriesRow
+import com.example.foodapp.components.Header
 import com.example.foodapp.ui.theme.FoodAppTheme
 import com.example.foodapp.ui.theme.PrincipalColor
 
@@ -32,36 +43,13 @@ fun HomeScreen(innerPadding : PaddingValues){
         modifier = Modifier
             .fillMaxSize()
             .padding(innerPadding)
-            .padding(30.dp)
+            .padding(start = 20.dp, end = 20.dp)
     ){
         // Header usuario
-        Row (
-            modifier = Modifier
-                .fillMaxWidth(),
-            verticalAlignment = Alignment.CenterVertically
-        ){
-            Icon(imageVector = Icons.Default.AccountCircle,
-                contentDescription = "Usuario",
-                tint = PrincipalColor,
-                modifier = Modifier
-                    .size(35.dp)
-            )
-            Text(
-                text = "Hola, Daniel",
-                fontSize = 30.sp,
-                fontWeight = FontWeight.Bold,
-                color = Color.Gray,
-                modifier = Modifier
-                    .padding(10.dp)
-                    .weight(1f)
-            )
-            Icon(imageVector = Icons.AutoMirrored.Filled.ExitToApp,
-                contentDescription = "Usuario",
-                tint = PrincipalColor,
-                modifier = Modifier
-                    .size(35.dp)
-            )
-        }
+        Header()
+
+        //Categorias
+        CategoriesRow()
     }
 }
 
