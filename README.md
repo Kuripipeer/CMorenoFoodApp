@@ -1,5 +1,3 @@
----
-
 # CMorenoFoodApp
 ![Kotlin](https://img.shields.io/badge/Kotlin-1.9-blueviolet?logo=kotlin)
 ![Android](https://img.shields.io/badge/Android-8.0%20\(Oreo\)-3DDC84?logo=android)
@@ -95,5 +93,3 @@ CMorenoFoodApp/
 ```
 
 Dentro de `app/` se organizan los módulos principales de la aplicación (`ui`, `data`, `models`, etc.).
-
----
