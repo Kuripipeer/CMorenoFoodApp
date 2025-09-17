@@ -1,7 +1,6 @@
 ---
 
 # CMorenoFoodApp
-
 ![Kotlin](https://img.shields.io/badge/Kotlin-1.9-blueviolet?logo=kotlin)
 ![Android](https://img.shields.io/badge/Android-8.0%20\(Oreo\)-3DDC84?logo=android)
 ![Gradle](https://img.shields.io/badge/Gradle-KTS-success?logo=gradle)
